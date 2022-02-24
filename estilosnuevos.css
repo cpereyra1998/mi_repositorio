@@ -134,8 +134,11 @@
                     width: 20px;
                     height: 20px;
                     border-radius: 10px;
+                    transition: all 2s;
                 }
-
+                .main__link:hover{
+                    transform: scale(1.5,1.5)
+                }
                     /* (Termina) Modificaciones: MAIN */
                 
                     /* (Inicia) Modificaciones: FOOTER */
@@ -195,8 +198,11 @@
                     flex-wrap: nowrap;
                     justify-content: space-between;
                     align-items: center;
+                    transition: all 2s;
                 }
-
+                .projects__imagen:hover{
+                    transform: scale(1.2,1.2);
+                }
                 /* (Termina) Modificaciones: MAIN */
                 
                 

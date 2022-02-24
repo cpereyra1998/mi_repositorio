@@ -1,0 +1,376 @@
+                /* FLEXBOX APLICADO EN........INDEX */
+                *{
+                    padding: 0px;
+                    margin: 0px;
+                }
+                
+                .body{
+                    display: grid;
+                    grid-template-areas: 
+                    "header header header"
+                    "main main ."
+                    "footer footer footer";
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: 0.5fr 4.4fr 0.1fr;
+                    width: 100vw;
+                    height: 100vh;
+                    background-image: url(Assets/Contact/Background.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                
+                .body--projects{
+                    background-image: url(Assets/Contact/BackgroundProjects-01.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                    /* (Inicia) Modificaciones: HEADER */
+                .header{
+                    display: grid;
+                    grid-area: header;
+                    grid-column: 1/4;
+                    grid-template-columns: repeat(2,1fr);
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, 0);
+                }
+                
+                .header__title{
+                    grid-column-start: 1;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    text-align: left;
+                    padding-left: 10px
+                    
+                }
+                .header__nav{
+                    grid-column-start: 2;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    width: 100%;
+                }
+                .nav__search{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .search__item{
+                    list-style: none;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 15px;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+                .search__item :hover{
+                    color: blueviolet;
+                }
+                .search__link{
+                    text-decoration: none;
+                    color: white;
+                }
+                    /* (Termina) Modificaciones: HEADER */
+                
+                    /* (Inicia) Modificaciones: MAIN */
+                .main{
+                    grid-area: main;
+                    grid-column: 2/3;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    
+                }
+                .main__div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                }
+                .main__section--index{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .main__title{
+                    font-family: Arial, Helvetica, sans-serif;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 60px;
+                    color: white;
+                    padding-left: 10px;
+                    position: absolute;
+                    top: 80px;
+                
+                }
+                .main__paragraph{
+                    display: inline-block;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 25px;
+                    color: white;
+                    padding-left: 10px;
+                    position: absolute;
+                    top: 160px;
+                
+                }
+                .section__social{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                
+                }
+                .main__social{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                .main__link{
+                    margin: 20px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                }
+
+                    /* (Termina) Modificaciones: MAIN */
+                
+                    /* (Inicia) Modificaciones: FOOTER */
+                
+                .footer{
+                    grid-area: footer;
+                    grid-column: 1/4;
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(70, 6, 100, 0);
+                }
+                
+                .footer__nav{
+                    width: 40%;
+                    display: flex;
+                    flex-direction: row;
+                    
+                    
+                }
+                
+                    /* (Termina) Modificaciones: FOOTER */
+                
+                
+                
+                                /* FLEXBOX APLICADO EN........PROJECTS */
+                
+                
+                   /* (Inicia) Modificaciones: MAIN */
+                
+                #main__projects{
+                    grid-column: 1/4;
+                }
+                
+                .section{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    /* padding-left: 300px;
+                    padding-right: 50px;
+                    padding-top: 50px; */
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                .projects__imagen{
+                    display: flex;
+                    width: 250px;
+                    height: 250px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                /* (Termina) Modificaciones: MAIN */
+                
+                
+                                /* FLEXBOX APLICADO EN........ABOUT ME */
+                
+                
+                   /* (Inicia) Modificaciones: MAIN */
+                
+                .aboutme__image{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 15%;
+                    padding-top: 25px;
+                    padding-left: 25px;
+                }
+                
+                   /* (Termina) Modificaciones: MAIN */
+                
+                
+                
+                
+                
+                                /* FLEXBOX APLICADO EN........SKILLS */
+                
+                
+                   /* (Inicia) Modificaciones: MAIN */
+                
+                #section{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    padding-left: 50px;
+                }
+                
+                
+                .cards__div{
+                    padding-right: 150px;
+                    padding-top: 80px;
+                    align-self: center;
+                }
+                
+                .card__title{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    align-self: center;
+                    color: white;
+                }
+                
+                .card__paragraph{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 10px;
+                    align-self: center;
+                    color: white;
+                }
+                
+                   /* (Termina) Modificaciones: MAIN */
+                
+                
+                                /* FLEXBOX APLICADO EN........CONTACT */
+                    
+                    /* (Inicia) Modificaciones: MAIN.Iconos */
+                
+                .section__socialcontact{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        height: 100%;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                }
+                .section__searchcontact{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                }
+                .section__linkcontact{
+                    text-decoration: none;
+                }
+                .section__imagecontact{
+                        margin: 40px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 20px;
+                }
+                
+                    
+                        /* (Termina) Modificaciones: MAIN.Iconos */
+                
+                
+                
+                        /* MEDIA QUERY */
+                
+                @media only screen and (max-width:714px){
+                            /* Modificaciones: INDEX*/
+                    .body{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: (0.5fr auto 0.1fr);
+                        background-image: url(Assets/Contact/BackgroundMedia.jpg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        grid-template-areas: 
+                        "header header"
+                        "main main"
+                        "footer footer";
+                    }
+                    .header{
+                        grid-area: header;
+                    }
+                    .header__title{
+                        font-size: 15px;
+                    }
+                    .header__nav{
+                        display: none;
+                    }
+                    .main{
+                        /* display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center; */
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: repeat(2,1fr,2fr);
+                        grid-column: 1/span3;
+                        grid-area: main;
+                    }
+                    .main__title{
+                        font-size: 30px;
+                        padding-right: 65px;
+                        }
+                    .main__paragraph{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        font-size: 20px;
+                        padding-right: 15px;
+                        padding-left: 25px;
+                    }
+                    .footer__nav{
+                        width: 100%;
+                    }
+                
+                
+                            /* Modificaciones: PROYECTOS*/
+                
+                    #main__projects{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                .section{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    height: auto;
+                    padding: 0px;
+                    margin: 0px;
+                }    
+                
+                .projects__imagen{
+                    width: 200px;
+                    height: 200px;
+                    padding: 0px;
+                    margin: 0px;
+                }
+                }

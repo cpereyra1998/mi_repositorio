@@ -1,5 +1,4 @@
-@mixin principal ($display, $align-items, $flex-direction) {
-    display: $display;
+@mixin principal ($align-items, $flex-direction) {
     align-items: $align-items;
     flex-direction: $flex-direction;
 }

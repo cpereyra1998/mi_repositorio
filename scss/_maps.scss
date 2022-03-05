@@ -1,0 +1,12 @@
+$fontsize:(
+    font1: 60px,
+    font2: 25px,
+    font3: 15px
+);
+
+@each $fontsize in 60px, 25px, 14px {
+
+    .font-#{$fontsize}{
+        font-size: $fontsize
+    }
+}

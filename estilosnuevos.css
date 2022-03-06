@@ -1,566 +1,752 @@
                 /* FLEXBOX APLICADO EN........INDEX */
-                *{
-                    padding: 0px;
-                    margin: 0px;
-                }
-                
-                .body{
-                    display: grid;
-                    grid-template-areas: 
-                    "header header header"
-                    "main main ."
-                    "footer footer footer";
-                    grid-template-columns: repeat(3,1fr);
-                    grid-template-rows: 0.5fr 4.4fr 0.1fr;
-                    width: 100vw;
-                    height: 100vh;
-                    background-image: url(Assets/Contact/Background.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                
-                .body--projects{
-                    display: grid;
-                    grid-template-areas: 
-                    "header header header"
-                    "main main main"
-                    "footer footer footer";
-                    background-image: url(Assets/Contact/BackgroundSkills.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                
-                .body--skills{
-                    display: grid;
-                    grid-template-areas: 
-                    "header header header"
-                    "main main main"
-                    "footer footer footer";
-                    background-image: url(Assets/Contact/BackgroundSkills.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                
-                    /* (Inicia) Modificaciones: HEADER */
-                .header{
-                    display: grid;
-                    grid-area: header;
-                    grid-column: 1/4;
-                    grid-template-columns: repeat(2,1fr);
-                    align-items: center;
-                    background-color: rgba(0, 0, 0, 0);
-                }
-                
-                .header__nav{
-                    grid-column-start: 2;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-end;
-                    width: 100%;
-                }
-                .nav__search{
-                    width: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                }
-                .search__item{
-                    list-style: none;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 15px;
-                    margin-left: 30px;
-                    margin-right: 30px;
-                }
-                .search__item :hover{
-                    color: blueviolet;
-                }
-                .search__link{
-                    text-decoration: none;
-                    color: white;
-                }
-                .fade-in-fwd {
-                    -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-                            animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-                }
-                
-                /* Keyframes */
-                
-                @-webkit-keyframes fade-in-fwd {
-                  0% {
-                    -webkit-transform: translateZ(-80px);
-                            transform: translateZ(-80px);
-                    opacity: 0;
-                  }
-                  100% {
-                    -webkit-transform: translateZ(0);
-                            transform: translateZ(0);
-                    opacity: 1;
-                  }
-                }
-                @keyframes fade-in-fwd {
-                  0% {
-                    -webkit-transform: translateZ(-80px);
-                            transform: translateZ(-80px);
-                    opacity: 0;
-                  }
-                  100% {
-                    -webkit-transform: translateZ(0);
-                            transform: translateZ(0);
-                    opacity: 1;
-                  }
-                }
-                
-                
-                
-                    /* (Termina) Modificaciones: HEADER */
-                
-                    /* (Inicia) Modificaciones: MAIN */
-                .main{
-                    grid-area: main;
-                    grid-column: 2/3;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
-                    
-                }
-                .main__div{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: center;
-                    
-                }
-                .main__section--index{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .main__title{
-                    font-family: Arial, Helvetica, sans-serif;
-                    width: 100%;
-                    text-align: center;
-                    font-size: 60px;
-                    color: white;
-                    padding-left: 10px;
-                    position: absolute;
-                    top: 80px;
-                
-                }
-                .text-focus-in {
-                    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-                            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-                }
-                
-                /* Keyframes */ 
-                
-                 @-webkit-keyframes text-focus-in {
-                    0% {
-                      -webkit-filter: blur(12px);
-                              filter: blur(12px);
-                      opacity: 0;
-                    }
-                    100% {
-                      -webkit-filter: blur(0px);
-                              filter: blur(0px);
-                      opacity: 1;
-                    }
-                  }
-                  @keyframes text-focus-in {
-                    0% {
-                      -webkit-filter: blur(12px);
-                              filter: blur(12px);
-                      opacity: 0;
-                    }
-                    100% {
-                      -webkit-filter: blur(0px);
-                              filter: blur(0px);
-                      opacity: 1;
-                    }
-                  }
-                
-                  .text-focus-in-p {
-                    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
-                            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
-                }
-                
-                /* keyframes */
-                
-                 @-webkit-keyframes text-focus-in {
-                    0% {
-                      -webkit-filter: blur(12px);
-                              filter: blur(12px);
-                      opacity: 0;
-                    }
-                    100% {
-                      -webkit-filter: blur(0px);
-                              filter: blur(0px);
-                      opacity: 1;
-                    }
-                  }
-                  @keyframes text-focus-in {
-                    0% {
-                      -webkit-filter: blur(12px);
-                              filter: blur(12px);
-                      opacity: 0;
-                    }
-                    100% {
-                      -webkit-filter: blur(0px);
-                              filter: blur(0px);
-                      opacity: 1;
-                    }
-                  }
-                  
-                  
-                .main__paragraph{
-                    display: inline-block;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 25px;
-                    color: white;
-                    padding-left: 10px;
-                    position: absolute;
-                    top: 160px;
-                
-                }
-                .section__social{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                
-                }
-                .main__social{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    
-                }
-                .main__link{
-                    margin: 20px;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 10px;
-                    transition: all 2s;
-                }
-                .main__link:hover{
-                    transform: scale(1.5,1.5)
-                }
-                    /* (Termina) Modificaciones: MAIN */
-                
-                    /* (Inicia) Modificaciones: FOOTER */
-                
-                .footer{
-                    grid-area: footer;
-                    grid-column: 1/4;
-                    display: flex;
-                    width: 100%;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: rgba(70, 6, 100, 0);
-                }
-                
-                .footer__nav{
-                    width: 40%;
-                    display: flex;
-                    flex-direction: row;
-                    
-                    
-                }
-                
-                    /* (Termina) Modificaciones: FOOTER */
-                
-                
-                
-                                /* FLEXBOX APLICADO EN........PROJECTS */
-                
-                
-                   /* (Inicia) Modificaciones: MAIN */
-                .container__projects{
-                    grid-area: main;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                    align-items: space-around;
-                }
-                .div__projectskills{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    padding-top: 20px;
-                }
-                .div-imagen {
-                    display:inline-block;
-                    position:relative;
-                  }
-                  .div-imagen > div {
-                    position:absolute;
-                    top:0;
-                    left:0;
-                    z-index:-1;
-                    padding-top:70px;
-                  }  
-                  
-                  .desvanecer{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                    width: 8cm;
-                    height: 8cm;
-                  }
-                
-                  .desvanecer:hover {
-                    opacity: 0.07;
-                    -webkit-transition: opacity 500ms;
-                    -moz-transition: opacity 500ms;
-                    -o-transition: opacity 500ms;
-                    -ms-transition: opacity 500ms;
-                    transition: opacity 500ms;
-                  }
-                
-                
-                .container__paragraph{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .paragraph{
-                    color: rgb(255, 255, 255);
-                    font-size: 20px;
-                    text-align: center;
-                }
-                .swing-in-top-fwd {
-                    -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-                            animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-                }
-                
-                /* Keyframes */
-                
-                 @-webkit-keyframes swing-in-top-fwd {
-                    0% {
-                      -webkit-transform: rotateX(-100deg);
-                              transform: rotateX(-100deg);
-                      -webkit-transform-origin: top;
-                              transform-origin: top;
-                      opacity: 0;
-                    }
-                    100% {
-                      -webkit-transform: rotateX(0deg);
-                              transform: rotateX(0deg);
-                      -webkit-transform-origin: top;
-                              transform-origin: top;
-                      opacity: 1;
-                    }
-                  }
-                  @keyframes swing-in-top-fwd {
-                    0% {
-                      -webkit-transform: rotateX(-100deg);
-                              transform: rotateX(-100deg);
-                      -webkit-transform-origin: top;
-                              transform-origin: top;
-                      opacity: 0;
-                    }
-                    100% {
-                      -webkit-transform: rotateX(0deg);
-                              transform: rotateX(0deg);
-                      -webkit-transform-origin: top;
-                              transform-origin: top;
-                      opacity: 1;
-                    }
-                  }
-                  
-                /* (Termina) Modificaciones: MAIN */
-                
-                
-                                /* FLEXBOX APLICADO EN........ABOUT ME */
-                
-                
-                   /* (Inicia) Modificaciones: MAIN */
-                
-                .aboutme__image{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    width: 15%;
-                    padding-top: 25px;
-                    padding-left: 25px;
-                }
-                
-                   /* (Termina) Modificaciones: MAIN */
-                
-                
-                
-                
-                
-                                /* FLEXBOX APLICADO EN........SKILLS */
-                
-                
-                   /* (Inicia) Modificaciones: MAIN */
-                
-                .slide-top {
-                    background-color: rgba(255, 255, 255, 0.062);
-                    border-radius: 15px;
-                    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                            animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                }
-                .card-title{
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 20px;
-                    align-self: center;
-                    color: rgb(255, 255, 255);
-                }
-                
-                .card-text{
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 15px;
-                    align-self: center;
-                    color: rgb(255, 255, 255);
-                }
-                
-                /* Keyframes */
-                
-                 @-webkit-keyframes slide-top {
-                    0% {
-                      -webkit-transform: translateY(0);
-                              transform: translateY(0);
-                    }
-                    100% {
-                      -webkit-transform: translateY(-15px);
-                              transform: translateY(-15px);
-                    }
-                  }
-                  @keyframes slide-top {
-                    0% {
-                      -webkit-transform: translateY(0);
-                              transform: translateY(0);
-                    }
-                    100% {
-                      -webkit-transform: translateY(-15px);
-                              transform: translateY(-15px);
-                    }
-                  }
-                  
-                   /* (Termina) Modificaciones: MAIN */
-                
-                
-                                /* FLEXBOX APLICADO EN........CONTACT */
-                    
-                    /* (Inicia) Modificaciones: MAIN.Iconos */
-                
-                .section__socialcontact{
-                        display: flex;
-                        flex-direction: row;
-                        width: 100%;
-                        height: 100%;
-                        flex-wrap: nowrap;
-                        justify-content: space-between;
-                        align-items: center;
-                }
-                .section__searchcontact{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        width: 100%;
-                        height: 100%;
-                }
-                .section__linkcontact{
-                    text-decoration: none;
-                }
-                .section__imagecontact{
-                        margin: 40px;
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 20px;
-                }
-                
-                    
-                        /* (Termina) Modificaciones: MAIN.Iconos */
-                
-                
-                
-                
-                
-                        /* MEDIA QUERY */
-                
-                @media only screen and (max-width:714px){
-                            /* Modificaciones: INDEX*/
-                    .body{
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-template-rows: (0.5fr auto 0.1fr);
-                        background-image: url(Assets/Contact/BackgroundMedia.jpg);
-                        background-size: 100%;
-                        background-repeat: no-repeat;
-                        grid-template-areas: 
-                        "header header"
-                        "main main"
-                        "footer footer";
-                    }
-                    .header{
-                        grid-area: header;
-                    }
-                    .header__title{
-                        font-size: 15px;
-                    }
-                    .header__nav{
-                        display: none;
-                    }
-                    .main{
-                        /* display: flex;
-                        flex-direction: column;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        align-items: center; */
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: repeat(2,1fr,2fr);
-                        grid-column: 1/span3;
-                        grid-area: main;
-                    }
-                    .main__title{
-                        font-size: 30px;
-                        padding-right: 65px;
-                        }
-                    .main__paragraph{
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: wrap;
-                        font-size: 20px;
-                        padding-right: 15px;
-                        padding-left: 25px;
-                    }
-                    .footer__nav{
-                        width: 100%;
-                    }
-                
-                
-                            /* Modificaciones: PROYECTOS*/
-                
-                    #main__projects{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        padding: 0px;
-                        margin: 0px;
-                    }
-                .section{
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    height: auto;
-                    padding: 0px;
-                    margin: 0px;
-                }    
-                
-                .projects__imagen{
-                    width: 200px;
-                    height: 200px;
-                    padding: 0px;
-                    margin: 0px;
-                }
-                }
-                
-                
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main ."
+    "footer footer footer";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.5fr 4.4fr 0.1fr;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Assets/Contact/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body--projects{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    background-image: url(Assets/Contact/BackgroundSkills.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body--skills{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    background-image: url(Assets/Contact/BackgroundSkills.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body--aboutme{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "main main main"
+  "footer footer footer";
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 0.5fr 4.4fr 0.1fr;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(Assets/Contact/BackgroundAboutMe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body--contact{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "main main main"
+  "footer footer footer";
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 0.5fr 4.4fr 0.1fr;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(Assets/Contact/BackgroundContact-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+    /* (Inicia) Modificaciones: HEADER */
+.header{
+    display: grid;
+    grid-area: header;
+    grid-column: 1/4;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header__nav{
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+.nav__search{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search__item{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.search__item :hover{
+    color: blueviolet;
+}
+.search__link{
+    text-decoration: none;
+    color: white;
+}
+.fade-in-fwd {
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* Keyframes */
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+
+    /* (Termina) Modificaciones: HEADER */
+
+    /* (Inicia) Modificaciones: MAIN */
+.main{
+    grid-area: main;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.main__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.main__section--index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__title{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    padding-left: 10px;
+    position: absolute;
+    top: 80px;
+
+}
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/* Keyframes */ 
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .text-focus-in-p {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+}
+
+/* keyframes */
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  
+.main__paragraph{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-left: 10px;
+    position: absolute;
+    top: 160px;
+
+}
+.section__social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.main__social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main__link{
+    margin: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    transition: all 2s;
+}
+.main__link:hover{
+    transform: scale(1.5,1.5)
+}
+    /* (Termina) Modificaciones: MAIN */
+
+    /* (Inicia) Modificaciones: FOOTER */
+
+.footer{
+    grid-area: footer;
+    grid-column: 1/4;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(70, 6, 100, 0);
+}
+
+.footer__nav{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+    /* (Termina) Modificaciones: FOOTER */
+
+
+                    /* FLEXBOX APLICADO EN........ABOUT ME */
+
+.container__aboutme{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.main--aboutme{
+  grid-area: main;
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+.main__div--aboutme{
+  align-items: left;
+}
+.main__section--aboutme{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 65%;
+}
+.main__title--aboutme{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  text-align: left;
+  font-size: 60px;
+  color: white;
+  padding-left: 20px;
+}
+.main__paragraph--aboutme{
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: white;
+  padding-left: 20px
+}
+.div__aboutme{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: right;
+  width: 35%;
+}
+.bounce-in-top {
+	-webkit-animation: bounce-in-top 1.1s both;
+	        animation: bounce-in-top 1.1s both;
+}
+/* Keyframes */
+
+ @-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+                /* FLEXBOX APLICADO EN........PROJECTS */
+
+
+   /* (Inicia) Modificaciones: MAIN */
+.container__projects{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+}
+.div-imagen {
+    display:inline-block;
+    position:relative;
+  }
+  .div-imagen > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding-top:70px;
+  }  
+  
+  .desvanecer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 8cm;
+    height: 8cm;
+  }
+
+  .desvanecer:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+  }
+
+
+.container__paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+}
+.swing-in-top-fwd {
+	-webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+/* Keyframes */
+
+ @-webkit-keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
+/* (Termina) Modificaciones: MAIN */
+
+
+                /* FLEXBOX APLICADO EN........SKILLS */
+
+
+   /* (Inicia) Modificaciones: MAIN */
+.container__skillcard{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr)
+}
+.div__projectskills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.slide-top {
+    background-color: rgba(255, 255, 255, 0.062);
+    border-radius: 15px;
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    align-self: center;
+    color: rgb(255, 255, 255);
+}
+
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    align-self: center;
+    color: rgb(255, 255, 255);
+}
+
+/* Keyframes */
+
+ @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+    }
+  }
+  
+   /* (Termina) Modificaciones: MAIN */
+
+
+                /* FLEXBOX APLICADO EN........CONTACT */
+    
+    /* (Inicia) Modificaciones: MAIN.Iconos */
+
+.section__contact{
+    display: grid;
+    grid-template-areas: "body body .";
+}
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2a2779);
+  width: 30%;
+  margin-left: 20px;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 90px;
+}
+.contenedor-campos{
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 20rem;
+  column-gap: 3rem;
+}
+.text-modification{
+  padding-top: 1px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  padding-left: 2px
+}
+    
+        /* (Termina) Modificaciones: MAIN.Iconos */
+
+
+
+
+
+
+
+
+                                             /* MEDIA QUERY */
+
+@media only screen and (max-width:585px){
+            /* Modificaciones: INDEX*/
+    .body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: (0.5fr auto 0.1fr);
+        background-image: url(Assets/Contact/BackgroundMedia.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    .header__title{
+        font-size: 15px;
+    }
+    .header__nav{
+        display: none;
+    }
+    .main{
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr,2fr);
+        grid-column: 1/span3;
+        grid-area: main;
+    }
+    .main__title{
+        font-size: 50px;
+        align-items: center;
+        padding-top: 30px;
+        }
+    .main__paragraph{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 20px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 25px;
+    }
+    .footer__nav{
+        width: 100%;
+    }
+  }
+
+
+  @media only screen and (max-width:655px){
+  
+.container__skillcard{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0px;
+      margin: 0px;
+}
+.div-imagendiv__projectskills{
+    flex-direction: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2cm;
+    margin: 10px;
+}
+.card-img-top{
+  width: 1cm;
+  height: 2,5cm;
+}
+.card-title{
+  font-size: 15px;
+}
+.card-text{
+  font-size: 10px;
+}
+}

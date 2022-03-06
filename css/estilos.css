@@ -16,7 +16,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 4.4fr 0.1fr;
   height: 100vh;
-  background-image: url(Assets/Contact/Background.jpg);
+  background-image: url(../Assets/Contact/Background.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 

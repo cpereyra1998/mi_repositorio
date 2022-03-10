@@ -682,181 +682,20 @@
    /* (Termina) Modificaciones: MAIN */
 
 
-                /* FLEXBOX APLICADO EN........CONTACT */
+                                                                            /* CONTACT */
     
     /* (Inicia) Modificaciones: MAIN.Iconos */
 
-.section__contact{
-    display: grid;
-    grid-template-areas: "body body .";
-}
-.form{
+.main__coantiner
+{
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right top, #050330, #5b0475);
-  width: 30%;
-  margin-left: 20px;
-  border-radius: 1rem;
-  padding: 2rem;
-  margin-top: 90px;
-}
-.contenedor-campos{
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto 20rem;
-  column-gap: 3rem;
-}
-.text-modification{
-  padding-top: 1px;
-  padding-right: 2px;
-  padding-bottom: 1px;
-  padding-left: 2px
-}
-
-
-        /* (Termina) Modificaciones: MAIN.Iconos */
-
-
-
-                                             /* MEDIA QUERY */
-
-@media only screen and (max-width:585px){
-            /* Modificaciones: INDEX*/
-    .body{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: (0.5fr auto 0.1fr);
-        background-image: url(Assets/Contact/BackgroundMedia.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";
-    }
-    .header{
-        grid-area: header;
-    }
-    .header__title{
-        font-size: 15px;
-    }
-    .header__nav{
-        display: none;
-    }
-    .main{
-        /* display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center; */
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,1fr,2fr);
-        grid-column: 1/span3;
-        grid-area: main;
-    }
-    .main__title{
-        font-size: 50px;
-        align-items: center;
-        padding-top: 30px;
-        }
-    .main__paragraph{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        font-size: 20px;
-        padding-top: 15px;
-        padding-right: 15px;
-        padding-left: 25px;
-    }
-    .footer__nav{
-        width: 100%;
-    }
-  }
-
-
-  @media only screen and (max-width:655px){
-  
-.container__skillcard{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 0px;
-      margin: 0px;
-}
-.div-imagendiv__projectskills{
-    flex-direction: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 2cm;
-    margin: 10px;
-}
-.card-img-top{
-  width: 1cm;
-  height: 2,5cm;
-}
-.card-title{
-  font-size: 15px;
-}
-.card-text{
-  font-size: 10px;
-}
-}
-
-
-
-
-/*/
-
-
-
-#mainCoantiner
-{
-    background-color: #181828;
   height:100%;
   width:100%;
   padding-bottom: 50px;
 }
 
-.mystyleSec
-{
-  background-image: url(http://thepatternlibrary.com/img/h.jpg);
-}
-
-.mystylethird
-{
-background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/binding_dark.png");
-}
-/*************header*******/
-
-.main-header {
-  top: 0;
-  left: 0;
-  z-index: 20;
-  -webkit-transform: translate3d(0,0,0);
-  height: 70px;
-  width: 100%;
-  bottom: inherit;
-  text-align: center;
-  background: rgba(28, 31, 47, 0.16);
-  overflow: hidden;
-  border: 1px solid #2e344d;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -ms-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-  box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03);
-  border-width: 1px 0px 0 1px;
-}
-
-
-/***end*****/
 
 .card{    border: none;
   border-radius: 30px;
@@ -871,7 +710,7 @@ border-radius: 10px;
 margin-top: 4px;
 }
 
-
+/*stars*/
 
 .starsec{
 content: " ";
@@ -980,7 +819,7 @@ background: rgba(0, 0, 0, 0.904);
 border: 1px solid #00f7cd;
 color: #00f7ff;
   outline: 0;
-  background: rgb(17, 20, 31);
+  background: rgb(128, 6, 177);
   border-radius: 4px;
 transition: all 0.3s ease-in-out 0s;
   /* box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04); */
@@ -1030,3 +869,99 @@ height: 40px;
   margin-right: 10px;
  
 }
+
+
+
+        /* (Termina) Modificaciones: MAIN.Iconos */
+
+
+
+                                             /* MEDIA QUERY */
+
+@media only screen and (max-width:585px){
+            /* Modificaciones: INDEX*/
+    .body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: (0.5fr auto 0.1fr);
+        background-image: url(Assets/Contact/BackgroundMedia.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    .header__title{
+        font-size: 15px;
+    }
+    .header__nav{
+        display: none;
+    }
+    .main{
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr,2fr);
+        grid-column: 1/span3;
+        grid-area: main;
+    }
+    .main__title{
+        font-size: 50px;
+        align-items: center;
+        padding-top: 30px;
+        }
+    .main__paragraph{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 20px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 25px;
+    }
+    .footer__nav{
+        width: 100%;
+    }
+  }
+
+
+  @media only screen and (max-width:655px){
+  
+.container__skillcard{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0px;
+      margin: 0px;
+}
+.div-imagendiv__projectskills{
+    flex-direction: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2cm;
+    margin: 10px;
+}
+.card-img-top{
+  width: 1cm;
+  height: 2,5cm;
+}
+.card-title{
+  font-size: 15px;
+}
+.card-text{
+  font-size: 10px;
+}
+}
+
+
+
+

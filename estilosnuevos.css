@@ -869,14 +869,7 @@ animation: animStar 80s linear infinite;
       padding: 0px;
       margin: 0px;
 }
-.div-imagendiv__projectskills{
-    flex-direction: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 2cm;
-    margin: 10px;
-}
+
 .card-img-top{
   width: 1cm;
   height: 2,5cm;

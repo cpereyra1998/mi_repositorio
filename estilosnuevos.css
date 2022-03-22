@@ -1,8 +1,13 @@
-                /* FLEXBOX APLICADO EN........INDEX */
+
 *{
     padding: 0px;
     margin: 0px;
 }
+
+
+                                              /* BASE + Index */
+
+/*Inicia: Bodys*/
 
 .body{
     display: grid;
@@ -41,7 +46,7 @@
     background-repeat: no-repeat;
 }
 
-.body--aboutme{
+.body--four{
   display: grid;
   grid-template-areas: 
   "header header header"
@@ -71,7 +76,25 @@
   background-repeat: no-repeat;
 }
 
-    /* (Inicia) Modificaciones: HEADER */
+.body--six{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "main main ."
+  "footer footer footer";
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 0.5fr 4.4fr 0.1fr;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(Assets/Contact/BackgroundSkills.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+/* Termina: Bodys */
+
+/* Inicia: Header */ 
+
 .header{
     display: grid;
     grid-area: header;
@@ -140,11 +163,11 @@
   }
 }
 
+/*Termina: Header*/
+
+ /*Inicia: Main*/
 
 
-    /* (Termina) Modificaciones: HEADER */
-
-    /* (Inicia) Modificaciones: MAIN */
 .main{
     grid-area: main;
     grid-column: 2/3;
@@ -276,9 +299,11 @@
 .main__link:hover{
     transform: scale(1.5,1.5)
 }
-    /* (Termina) Modificaciones: MAIN */
 
-    /* (Inicia) Modificaciones: FOOTER */
+/* Termina: Main */
+
+
+/*Inicia: Footer*/
 
 .footer{
     grid-area: footer;
@@ -299,10 +324,11 @@
     
 }
 
-    /* (Termina) Modificaciones: FOOTER */
+/*Termina: Footer*/
 
 
-                    /* FLEXBOX APLICADO EN........ABOUT ME */
+                                              /* Agregados: ABOUT ME */
+
 
 .container__aboutme{
     grid-area: main;
@@ -375,7 +401,7 @@
  }
 
  .button:hover {
-   background-position: right center; /* change the direction of the change here */
+   background-position: right center; 
    color: #fff;
    text-decoration: none;
  }
@@ -525,10 +551,9 @@
 }
 
 
-                /* FLEXBOX APLICADO EN........PROJECTS */
+                                              /* Agregados: PROJECTS */
 
 
-   /* (Inicia) Modificaciones: MAIN */
 .container__projects{
     grid-area: main;
     display: flex;
@@ -621,13 +646,8 @@ figure.snip1256.hover figcaption {
   transition-delay: 0.2s;
 }
   
-/* (Termina) Modificaciones: MAIN */
+                                              /* Agregados: SKILLS */
 
-
-                /* FLEXBOX APLICADO EN........SKILLS */
-
-
-   /* (Inicia) Modificaciones: MAIN */
 .container__skillcard{
     grid-column: span 3;
     display: grid;
@@ -684,12 +704,36 @@ figure.snip1256.hover figcaption {
     }
   }
   
-   /* (Termina) Modificaciones: MAIN */
+
+            /*Extra: Paginas de projectos */
+
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
 
 
-                                                                            /* CONTACT */
-    
-    /* (Inicia) Modificaciones: MAIN.Iconos */
+ @-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+                                              /* Agregados: CONTACT */
+
   
 .main__container{
   grid-area: main;
@@ -796,14 +840,8 @@ animation: animStar 80s linear infinite;
   margin-top: 2rem !important;
 }
 
+                                              /* Modificaciones: MEDIA QUERY */
 
-
-
-        /* (Termina) Modificaciones: MAIN.Iconos */
-
-
-
-                                             /* MEDIA QUERY */
 
 @media only screen and (max-width:585px){
             /* Modificaciones: INDEX*/
@@ -869,7 +907,14 @@ animation: animStar 80s linear infinite;
       padding: 0px;
       margin: 0px;
 }
-
+.div-imagendiv__projectskills{
+    flex-direction: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2cm;
+    margin: 10px;
+}
 .card-img-top{
   width: 1cm;
   height: 2,5cm;

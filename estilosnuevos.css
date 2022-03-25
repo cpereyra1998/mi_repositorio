@@ -919,11 +919,6 @@ animation: animStar 80s linear infinite;
         display: flex;
     }
     .main{
-        /* display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center; */
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2,1fr,2fr);

@@ -995,61 +995,74 @@ animation: animStar 80s linear infinite;
            @media only screen and (max-width:655px){
 
 .body--aboutme{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: (0.5fr auto 0.1fr);
-        background-image: url(Assets/Contact/BackgroundMediaThree.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";
-    }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: (0.5fr auto 0.1fr);
+  background-image: url(Assets/Contact/BackgroundMediaThree.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "footer footer";
+}
 .container__aboutme{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,1fr,2fr);
-        grid-column: 1/span3;
-        grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2,1fr,2fr);
+  grid-column: 1/span3;
+  grid-area: main;
+}
+.main__title--aboutme{
+  font-size: 50px;
+  align-items: center;
+  padding-top: 30px;
+}
+.main__paragraph--aboutme{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 20px;
+   padding-right: 150px;
     }
-    .main__title--aboutme{
-        font-size: 50px;
-        align-items: center;
-        padding-top: 30px;
-        margin-left: 150px;
-
-        }
-    .main__paragraph--aboutme{
-        font-size: 15px;
-        text-align: center;
-        margin-left: 150px;
-    }
-  .img__aboutme{
+.img__aboutme{
     display: flex;
     flex-wrap: wrap;
-    width: 50px;
-    height: 50px;
+    width: 900px;
+    height: 300px;
+    padding-left: 220px;
+  }
+  .button {
+    margin-left: 150px;
+    padding: 4px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);            
+    box-shadow: 0 0 20px rgb(94, 4, 146);
+    border-radius: 25px;
+    display: block;
   }
 }
 
 
            /* Modificaciones: PROJECTS*/
+
 @media only screen and (max-width:585px){
  
-    .body--projects{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: (0.5fr auto 0.1fr);
-        background-image: url(Assets/Contact/BackgroundMediaThree.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        grid-template-areas: 
+.body--projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (0.5fr auto 0.1fr);
+    background-image: url(Assets/Contact/BackgroundMediaThree.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-areas: 
         "header header"
         "main main"
         "footer footer";
-    }
-
+}
 .container__projects{
   grid-area: main;
   display: flex;
@@ -1057,7 +1070,6 @@ animation: animStar 80s linear infinite;
   justify-content: space-around;
   align-items: space-around;
 }
-
 figure.snip1256 {
 font-family: 'Raleway', Arial, sans-serif;
 color: #fff;
@@ -1089,7 +1101,7 @@ width: 100%;
 transform-origin: 50% 100%;
 }
 
-                                                              /*ok*/
+                                                              /*
 
 
 figure.snip1256 figcaption {
@@ -1146,4 +1158,6 @@ figure.snip1256.hover figcaption {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
     }
+
+*/
 }

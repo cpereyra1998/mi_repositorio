@@ -719,7 +719,11 @@ figure.snip1256.hover figcaption {
     opacity: 1;
   }
 }
-  
+.img__aboutme--page{
+  width: 400px;
+  height: 500px;
+
+}
                                               /* Agregados: SKILLS */
 
 .container__skillcard{
@@ -1160,4 +1164,19 @@ figure.snip1256.hover figcaption {
     }
 
 */
+.main__title{
+  font-size: 30px;
+  padding-left: 90px;
+}
+.main__paragraph--page{
+  font-size: 15px;
+}
+.img__aboutme--page{
+      display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 230px;
+    margin-top: 90px;
+    margin-left: 200px;
+}
 }

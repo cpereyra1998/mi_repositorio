@@ -947,7 +947,7 @@ animation: animStar 80s linear infinite;
 
            /* Modificaciones: SKILLS*/
 
-  @media only screen and (max-width:655px){
+  @media only screen and (max-width:920px){
   
   .body--skills{
     display: grid;

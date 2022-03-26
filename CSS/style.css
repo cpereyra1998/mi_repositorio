@@ -775,7 +775,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.5fr auto 0.1fr;
-    background-image: url(../Assets/Contact/BackgroundMediaThreeExtend.jpg);
+    background-image: url(../Assets/Contact/BackgroundMediaThree.jpg);
     background-size: cover;
     background-repeat: repeat;
     grid-template-areas: "header header" "main main" "footer footer"; }

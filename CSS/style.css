@@ -10,69 +10,6 @@
 .font-15px {
   font-size: 15px; }
 
-.fade-in {
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-.main__paragraph--page {
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 19px;
-  color: white;
-  padding-left: 10px;
-  position: absolute;
-  top: 160px;
-  left: 70px;
-  right: 70px; }
-
-.scale-in-ver-top {
-  -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-@-webkit-keyframes scale-in-ver-top {
-  0% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1; }
-  100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1; } }
-
-@keyframes scale-in-ver-top {
-  0% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1; }
-  100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1; } }
-
-.img__aboutme--page {
-  width: 400px;
-  height: 500px; }
-
 /*Index*/
 .fade-in-fwd {
   -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -346,6 +283,54 @@
     transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.scale-in-ver-top {
+  -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1; } }
+
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1; } }
 
 /* Modificaciones: MEDIA QUERY */
 /* Modificaciones: INDEX*/
@@ -624,8 +609,7 @@
   grid-area: header;
   grid-column: 1/4;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  background-color: white; }
+  align-items: center; }
   .header .header__nav {
     grid-column-start: 2;
     display: flex;
@@ -769,16 +753,6 @@
     font-size: 0.8em;
     font-weight: 500;
     margin: 0 0 15px; }
-  .container__projects figure.snip1256 .read-more {
-    border: 2px solid white;
-    padding: 0.5em 1em;
-    font-size: 0.8em;
-    text-decoration: none;
-    color: white;
-    display: inline-block; }
-  .container__projects figure.snip1256 .read-more:hover {
-    background-color: white;
-    color: #000000; }
   .container__projects figure.snip1256:hover img,
   .container__projects figure.snip1256.hover img {
     -webkit-transform: rotateX(90deg);
@@ -791,6 +765,22 @@
     opacity: 1;
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s; }
+
+/* Pages */
+.main__paragraph--page {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  color: white;
+  padding-left: 10px;
+  position: absolute;
+  top: 160px;
+  left: 70px;
+  right: 70px; }
+
+.img__aboutme--page {
+  width: 400px;
+  height: 500px; }
 
 /* SKILLS */
 .body--skills {

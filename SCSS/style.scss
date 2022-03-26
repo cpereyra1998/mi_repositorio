@@ -2,7 +2,6 @@
 @import "_map.scss";
 @import "_mixin.scss";
 @import "_variables.scss";
-@import "_page.scss";
 @import "_animation.scss";
 @import "_media.scss";
 
@@ -30,7 +29,6 @@
   grid-column: 1/4;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
-  background-color: $color;
   .header__nav{
     grid-column-start: 2;
     display: flex;
@@ -205,18 +203,6 @@
       font-weight: 500;
       margin: 0 0 15px;
     }
-    figure.snip1256 .read-more {
-      border: 2px solid $color;
-      padding: 0.5em 1em;
-      font-size: 0.8em;
-      text-decoration: none;
-      color: $color;
-      display: inline-block;
-    }
-    figure.snip1256 .read-more:hover {
-      background-color: $color;
-      color: #000000;
-    }
     figure.snip1256:hover img,
     figure.snip1256.hover img {
       -webkit-transform: rotateX(90deg);
@@ -233,6 +219,25 @@
     }
 }
 
+/* Pages */
+
+.main__paragraph--page{
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  color: white;
+  padding-left: 10px;
+  position: absolute;
+  top: 160px;
+  left: 70px;
+  right: 70px;
+}
+
+.img__aboutme--page{
+  width: 400px;
+  height: 500px;
+
+}
 
                                             /* SKILLS */
 
@@ -374,11 +379,11 @@
             font-size: 25px;
             color: $color;
             padding-left: 20px
-            }
           }
         }
       }
     }
+  }
 }
 
 

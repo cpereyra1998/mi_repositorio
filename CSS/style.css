@@ -690,7 +690,8 @@
       .body .header .header__nav .nav__search {
         flex-direction: column; }
     .body .main .main__div .main__section--index .main__title {
-      font-size: 2.5em; }
+      font-size: 2.5em;
+      padding-left: 0px; }
     .body .main .main__div .main__section--index .main__paragraph {
       font-size: 1.5em; } }
 

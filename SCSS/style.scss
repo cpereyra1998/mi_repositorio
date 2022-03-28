@@ -446,6 +446,7 @@ width: 35%;
         .main__section--index{
           .main__title{
             font-size: 2.5em;
+            padding-left: 0px;
           }
           .main__paragraph{
             font-size: 1.5em;
@@ -469,30 +470,29 @@ width: 35%;
   justify-content: space-around;
   padding: 0px;
   margin: 0px;
-        }
-        .div-imagendiv__projectskills{
-          flex-direction: flex;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          align-items: center;
-          padding-bottom: 2cm;
-          margin: 10px;
-        }
-        .card-img-top{
-          width: 1cm;
-          height: 2,5cm;
-        }
-        .card-title{
-          font-size: 15px;
-        }
-        .card-text{
-          font-size: 10px;
-        }
-        }
+  }
+  .div-imagendiv__projectskills{
+    flex-direction: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2cm;
+    margin: 10px;
+  }
+  .card-img-top{
+    width: 1cm;
+    height: 2,5cm;
+  }
+  .card-title{
+    font-size: 15px;
+  }
+  .card-text{
+    font-size: 10px;
+  }
+}
+      /* Modificaciones: ABOUT ME*/
         
-       /* Modificaciones: ABOUT ME*/
-        
-       @media only screen and (max-width:768px){
+      @media only screen and (max-width:768px){
         
         .body--aboutme{
           display: grid;
@@ -523,7 +523,7 @@ width: 35%;
           flex-direction: column;
           flex-wrap: wrap;
           font-size: 15px;
-           padding-right: 150px;
+          padding-right: 150px;
 }
         .img__aboutme{
 display: flex;
@@ -546,8 +546,7 @@ display: block;
           }
         }
         
-        
-       /* Modificaciones: PROJECTS*/
+        /* Modificaciones: PROJECTS*/
         
         @media only screen and (max-width:576px){
   .body--projects{
